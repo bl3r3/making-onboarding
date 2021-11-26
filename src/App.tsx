@@ -1,14 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Grid } from './components/Grid/Grid';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { GridLayout } from "./components/Card/GridLayout/";
 
 function App() {
-	return (
-		<Grid>
-			<h1>Holac</h1>
-		</Grid>
-	);
+  return (
+    <GridLayout>
+      <h1>Hola</h1>
+    </GridLayout>
+  );
 }
 
 export default App;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Report, ReportProps } from './Report';
+import { Report, ReportProps } from './index';
 
 import { Meta, Story } from '@storybook/react';
 
