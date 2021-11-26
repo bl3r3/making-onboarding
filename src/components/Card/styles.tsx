@@ -53,7 +53,7 @@ export const MainCard = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  color: white;
+  color: ${theme.colors.white};
 
   @media (max-width: 1000px) {
     min-width: 170px;
@@ -155,7 +155,7 @@ export const CardHeader = styled.div<backgroundColorProps>`
   justify-content: flex-end;
   overflow: hidden;
   position: absolute;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: ${theme.borderRadiusCustom};
 `;
 
 export const CardContent = styled.div`
@@ -165,8 +165,8 @@ export const CardContent = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  background-color: hsl(235, 46%, 20%);
-  border-radius: 20px;
+  background-color: ${theme.colors.darkBlue};
+  border-radius: ${theme.borderRadius};
   position: absolute;
   z-index: 9;
   top: 40px;

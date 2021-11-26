@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../Theme";
 
 export const Container = styled.div`
   min-width: 210px;
@@ -8,7 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  color: white;
+  color: ${theme.colors.white};
 
   @media (max-width: 768px) {
     width: 100% !important;
@@ -25,7 +26,7 @@ export const Container = styled.div`
 export const ReportFor = styled.div`
   width: 100%;
   height: 65%;
-  background-color: hsl(235, 45%, 61%);
+  background-color: ${theme.colors.desaturatedBlue};
   position: absolute;
   top: 0;
   z-index: 9;
@@ -57,7 +58,7 @@ export const ReportFor = styled.div`
 export const Menu = styled.div`
   width: 100%;
   height: 40%;
-  background-color: hsl(235, 46%, 20%);
+  background-color: ${theme.colors.darkBlue};
   position: absolute;
   bottom: 0;
   border-radius: 0px 0px 20px 20px;
@@ -80,7 +81,7 @@ export const Menu = styled.div`
 
   a {
     text-decoration: none;
-    color: white;
+    color: ${theme.colors.white};
     height: 30px;
     margin-left: 30px;
     margin-top: 10px;
